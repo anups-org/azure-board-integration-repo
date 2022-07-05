@@ -6,6 +6,9 @@ on:
     types: [ opened, edited, deleted, closed, reopened, labeled, unlabled, assigned ]
 
 # Steps represent a sequence of tasks that will be executed as part of the job
+jobs:
+  sync:
+    runs-on: ubuntu-latest
     steps:
       # You may pin to the exact commit or the version.
       # uses: danhellem/github-actions-issue-to-work-item@b82f03709b7cc669a689261658f2fabb0586f0ed
